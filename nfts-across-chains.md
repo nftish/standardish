@@ -1,3 +1,7 @@
+# Known Cross-Chain Issues
+
+* [tokenURI is not a URI](https://github.com/nftstorage/standardish/issues/1)
+
 # Ethereum, Polygon and other EVM chains
 
 NFT's are minted in contracts conforming to the [ERC721 specification](https://eips.ethereum.org/EIPS/eip-721).
@@ -10,11 +14,9 @@ Each NFT has a `tokenURI` property that is, according to the specification, a UR
 
 ## Known Issues
 
-* tokenURI is not a URI
-* tokenURI is larger than a reasonable primaryKey
-* tokenURI is an HTTP/HTTPS URL
-  * rug pulls
-  * server is down, service goes out of business
+* [tokenURI is larger than a reasonable primaryKey](https://github.com/nftstorage/standardish/issues/2)
+* [tokenURI is an HTTP/HTTPS URL](https://github.com/nftstorage/standardish/issues/3)
+  * [rugpulls](https://github.com/nftstorage/standardish/issues/4)
 
 # Solana
 
