@@ -37,7 +37,7 @@ by far the most commonly adopted properties.
 
 #### Known Issues
 
-* metadata.json: videos in the image field
+* [metadata.json: videos in the image field](https://github.com/nftstorage/standardish/issues/5)
 
 ## Visible but by no means universal adoption of...
 
