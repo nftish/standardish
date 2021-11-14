@@ -54,7 +54,23 @@ by far the most commonly adopted properties.
 
 ### Metaplex expanded metadata definition
 
-Most NFT's in Solana follow the Metaplex [standard for metadata](https://docs.metaplex.com/nft-standard) which includes some expanded property definitions.
+Most NFT's in Solana follow the Metaplex [standard for metadata](https://docs.metaplex.com/nft-standard) which includes some expanded property definitions and also specifies some metadata properties that live on-chain.
+
+"Basic info about the SPL token is provided with the Metadata struct, whose account address is a PDA with a derived key of ['metadata', metadata_program_id, mint_id]."
+
+Developers are instructed to rely on the following on-chain metadata:
+
+| Field                   | Type    | Description                                                    | How do we display it                                                                                    |
+| ----------------------- | ------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| name                    | string  | name of the asset                                              | grid view and single NFT view                                                                           |
+| symbol                  | string  | symbol of the asset                                            | not shown currently                                                                                     |
+| uri                     | string  | URI to the external JSON representing the asset                | linked in the single NFT view                                                                           |
+| creators                | array   | public key of each creator                                     | shown in the single NFT view, resolved to twitter handles if they are connected via Solana Name Service |
+| update_authority        | string  | public key of the metadata owner                               | shown in the single NFT view, can be updated in the send NFT modal                                      |
+| primary_sale_happened   | boolean | flag describing whether the primary sale of the token happened | visible in the send NFT modal, can be updated                                                           |
+| seller_fee_basis_points | number  | royalties percentage awarded to creators                       | shown as a percentage received by each co-creator                                                       |
+
+Off-chain metadata is referenced via the `uri` field and the spec contains the following additional property definitions:
 
 ```JSON
 {
