@@ -20,3 +20,10 @@ Each NFT has a `tokenURI` property that is, according to the specification, a UR
 
 # Solana
 
+In Solana, contracts don't mutate *their own* state, they mutate state within an "account." As such, Solana NFT's are **NOT** idenfiable as an integer (or other identifier) *within* a particular contract.
+
+[`spl-token` provides the base interface](https://spl.solana.com/token) for all token programs (similar to ERC20). NFT's in Solana are spl-tokens
+that are [capped to a supply of "1."](https://www.zappycode.com/tutorials/create-your-own-token-and-nft-on-solana)
+
+Most NFT's in Solana use [Metaplex](https://metaplex.com), or a contract derived from Metaplex. Metaplex has [written a clear standard](https://docs.metaplex.com/nft-standard) for how to express metadata.json and has also defines additional metadata properties.
+
