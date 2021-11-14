@@ -27,3 +27,14 @@ that are [capped to a supply of "1."](https://www.zappycode.com/tutorials/create
 
 Most NFT's in Solana use [Metaplex](https://metaplex.com), or a contract derived from Metaplex. Metaplex has [written a clear standard](https://docs.metaplex.com/nft-standard) for how to express metadata.json and has also defines additional metadata properties.
 
+NFT's use a mix of [on-chain and off-chain metadata](https://github.com/nftstorage/standardish/blob/main/metadata-json.md#metaplex-expanded-metadata-definition).
+
+# Flow
+
+Flow was built with NFT's in mind.
+
+In Cadence (Flow's Smart Contract Language), [each NFT is represented by a resource with an integer ID. That resource object is stored in a user's account](https://docs.onflow.org/cadence/tutorial/04-non-fungible-tokens/).
+
+Cadence has many features for working with NFT's detailed in the [Flow NFT Spec](https://github.com/onflow/flow-nft).
+
+Typically, metadata is stored off-chain but there [are efforts to move that on-chain](https://github.com/onflow/flow-nft/issues/9).
