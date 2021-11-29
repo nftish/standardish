@@ -9,6 +9,7 @@ December 1st at noon PT. [Register here](https://protocol.zoom.us/meeting/regist
 # Problem Areas
 
 * [What is an NFT in each chain and how do they differ?](./nfts-across-chains.md)
+* [What NFT indexes are there and how do they work?](./nft-indexing.md)
 
 ## When an NFT is minted...
 
