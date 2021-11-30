@@ -12,6 +12,8 @@ NFT's are minted inside their contract and identified by an integer. These NFT's
 
 Each NFT has a `tokenURI` property that is, according to the specification, a URI to the token's "metadata" which is assumed to be a JSON file.
 
+There's another community [working group](https://www.nftstandards.wtf/NFT+Standards+Wiki+-+READ.me) focused on Ethereum related NFT issues.
+
 ## Known Issues
 
 * [tokenURI is larger than a reasonable primaryKey](https://github.com/nftstorage/standardish/issues/2)
