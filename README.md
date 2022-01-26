@@ -4,7 +4,7 @@ Informal working group for NFT interoporability.
 
 ## Next WG Meeting
 
-January 26th, 2022 at noon PT [Register here](https://candy.zoom.us/meeting/register/tJArduihqzoqHNVqgJ2xiBdQoDHbu_in0r9_)
+February 9th, 2022 at noon PT [Register here](https://candy.zoom.us/meeting/register/tJArduihqzoqHNVqgJ2xiBdQoDHbu_in0r9_)
 
 ## Past WG Meetings
 
